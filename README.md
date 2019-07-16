@@ -1,6 +1,6 @@
 # Miniflow
 
-This repository aims to help you have an [Airflow](https://airflow.apache.org/i) installation running in Kubernetes [minikube](https://github.com/kubernetes/minikube).
+This repository aims to help you have an [Airflow](https://airflow.apache.org/) installation running in Kubernetes [minikube](https://github.com/kubernetes/minikube).
 
 ## Setup
 
@@ -112,3 +112,11 @@ minikube delete -p airflow
 
 * In this example we are not following production best practices. So, please review the helm configs [here](https://github.com/helm/charts/tree/master/stable/airflow) if you plan to run production workloads.
 * This example uses the docker image `rodrigodelmonte/docker-airflow:1.10.1` which uses the `Dockerfile` from [puckel/docker-airflow](https://github.com/puckel/docker-airflow), There is no official docker image maintained by the Airflow community, the current one maintained by the community is being used for development only. Fell free to build your image and check the `docker/` folder or try [puckel/docker-airflow](https://github.com/puckel/docker-airflow).
+
+## Contributing
+
+* Fork it (<https://github.com/Onefootball/miniflow/fork>)
+* Create your feature branch (git checkout -b feature/fooBar)
+* Commit your changes (git commit -am 'Add some fooBar')
+* Push to the branch (git push origin feature/fooBar)
+* Create a new Pull Request
