@@ -87,6 +87,27 @@ Every time you update your `values.yaml` run the following command to apply the 
 helm upgrade airflow -f values.yaml stable/airflow --namespace airflow
 ```
 
+## Kubernetes dashboard
+
+```bash
+minikube dashboard -p airflow
+```
+
+## Airflow dashboard
+
+```bash
+kubectl port-forward svc/airflow-web -n airflow 8080
+```
+
+In the brwoser try http://localhost:8080
+
+## Clean
+
+```bash
+helm del --purge airflow
+minikube delete -p airflow
+```
+
 ## DISCLAIMER
 
 * In this example we are not following production best practices. So, please review the helm configs [here](https://github.com/helm/charts/tree/master/stable/airflow) if you plan to run production workloads.
