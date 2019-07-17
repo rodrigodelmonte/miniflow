@@ -99,7 +99,7 @@ minikube dashboard -p airflow
 kubectl port-forward svc/airflow-web -n airflow 8080
 ```
 
-In the brwoser try http://localhost:8080
+In the browser try http://localhost:8080
 
 ## Clean
 
