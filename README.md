@@ -59,7 +59,7 @@ More details about how it works [here](https://github.com/helm/charts/tree/maste
 cp ~/.ssh/id_rsa ~/.ssh/id_rsa.pub .
 grep github ~/.ssh/known_hosts > known_hosts
 kubectl create secret generic my-git-secret --from-file=id_rsa --from-file=known_hosts --from-file=id_rsa.pub --namespace airflow
-rm ~/.ssh/id_rsa ~/.ssh/id_rsa.pub known_hosts
+rm id_rsa id_rsa.pub known_hosts
 ```
 
 Change the `values.yaml`
